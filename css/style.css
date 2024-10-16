@@ -165,8 +165,8 @@
 .carousel-control-next-icon {
     width: 3rem;
     height: 3rem;
-    background-color: var(--primary);
-    border: 10px solid var(--primary);
+    background-color: var(--danger);
+    border: 10px solid var(--dark);
 }
 
 @media (max-width: 768px) {
@@ -206,9 +206,9 @@
 /*** Courses ***/
 .courses {
     min-height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url(../img/carousel-1.jpg) center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-color: black !important; /* Ensures this overrides any conflicting styles */
 }
 
 .courses-item .courses-overlay {
@@ -255,7 +255,7 @@
 
 .team-item:hover::after {
     height: 100%;
-    background: var(--primary);
+    background: red;
 }
 
 .team-item .team-social {
