@@ -32,72 +32,99 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
+  <!-- Spinner Start -->
+  <div id="spinner" 
+  style="background-color: black; color: red;" 
+  class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+  <img src="img/my_logo.jpg" 
+      alt="Loading Logo" 
+      style="width: 100px; height: 100px; animation: spin 2s linear infinite;">
+  </div>
+  <!-- Spinner End -->
+  
+  <!-- CSS for Rotation Animation -->
+  <style>
+  @keyframes spin {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+  }
+  </style>
 
 
- <!-- Topbar Start -->
- <div class="container-fluid bg-dark text-light p-0">
-    <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-            <div class="h-100 d-inline-flex align-items-center me-4">
-                <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                <small>Manchester M2 4WU, United Kingdom</small>
-            </div>
-            <div class="h-100 d-inline-flex align-items-center">
-                <small class="far fa-clock text-primary me-2"></small>
-                <small>Mon - Fri : 08.30 AM - 06.30 PM</small>
-            </div>
-        </div>
-        <div class="col-lg-5 px-5 text-end">
-            <div class="h-100 d-inline-flex align-items-center me-4">
-                <small class="fa fa-phone-alt text-primary me-2"></small>
-                <small> +44 7891 386977</small>
-            </div>
-            <div class="h-100 d-inline-flex align-items-center mx-n2">
-                <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-            <h2 class="m-0"><i class="fa fa-car text-primary me-2"></i>Just4Her</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Courses</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
-                        <!-- <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a> -->
-                    </div>
+    <!-- Topbar Start -->
+    <div style="background-color:#545454;" class="container-fluid text-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-light me-2"></small>
+                    <small>Covering Manchester</small>
                 </div>
-                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-light me-2"></small>
+                    <small>Mon - Fri : 08.30 AM - 06.30 PM</small>
+                </div>
             </div>
-            <a href="appointment.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-light me-2"></small>
+                    <small> +44 7891 386977</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <!-- <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class=" text-white fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class=" text-white fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class=" text-white fab fa-linkedin-in"></i></a> -->
+                    <a class="btn btn-square btn-link rounded-0" href=""><i class=" text-white fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
-    </nav>
-    <!-- Navbar End -->
+    </div>
+    <!-- Topbar End -->
+
+
+<!-- Navbar Start -->
+<nav style="background-color: black; color: white;" 
+    class="navbar navbar-expand-lg navbar-light sticky-top p-0">
+
+    <a href="index.html" 
+       class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5"
+       style="padding: 0.5rem 1rem;">
+        <img src="img/logo.jpg" 
+             alt="Just4Her Logo" 
+             style="max-height: 80px; width: auto; object-fit: contain;">
+    </a>
+
+    <button type="button" 
+            class="navbar-toggler me-4" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarCollapse"
+            style="border: none;">
+        <span class="navbar-toggler-icon" 
+              style="background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3E%3Cpath stroke=%27%23FF017E%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');">
+        </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active text-white">Home</a>
+            <a href="about.html" class="nav-item nav-link text-white">About</a>
+            <a href="courses.html" class="nav-item nav-link text-white">Courses</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Pages</a>
+                <div style="background-color:black;" class="dropdown-menu m-0">
+                    <a href="feature.html" class="dropdown-item text-white">Features</a>
+                    <a href="appointment.html" class="dropdown-item text-white">Appointment</a>
+                </div>
+            </div>
+            <a href="contact.html" class="nav-item nav-link text-white">Contact</a>
+        </div>
+        <a href="#apply" class="py-4 px-lg-5 d-none d-lg-block" 
+           style="background-color:#545454; color: white;">
+            Get Started <i class="fa fa-arrow-right ms-3"></i>
+        </a>
+    </div>
+</nav>
+
+<!-- Navbar End -->
 
 
     <!-- Page Header Start -->
@@ -168,18 +195,21 @@
 
 
       <!-- Footer Start -->
-      <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div style="background-color:black" class="container-fluid text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
-                    <h4 class="text-white mb-4">Get In Touch</h4>
-                    <h2 class="text-primary mb-4"><i class="fa fa-car text-white me-2"></i>Just4Her</h2>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Manchester M2 4WU, United Kingdom</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i> +44 7891 386977</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Just4her@gmail.com</p>
+                    <h4 style="color:#F78D0A" class="mb-4">Get In Touch</h4>
+                    <h2 class="text-light mb-4">
+                        <i style="color:#FF017E" class="fa fa-car me-2"></i>
+                        Just<span style="color: #F78D0A;">4</span><span style="color: white;">Her</span>
+                    </h2>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3 text-warning"></i>Covering Manchester</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3 text-warning"></i> +44 7891 386977</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3 text-warning"></i>Just4her@gmail.com</p>
                 </div>
                 <div class="col-lg-2 col-md-6">
-                    <h4 class="text-light mb-4">Company</h4>
+                    <h4 style="color:#F78D0A;" class="mb-4">Company</h4>
                     <a class="btn btn-link" href="about.html">About Us</a>
                     <a class="btn btn-link" href="contact.html">Contact Us</a>
                     <a class="btn btn-link" href="about.html">Our Services</a>
@@ -187,7 +217,7 @@
                     <!-- <a class="btn btn-link" href="">Support</a> -->
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Courses</h4>
+                    <h4 style="color:#F78D0A;" class="mb-4">Courses</h4>
                     <a class="btn btn-link" href="courses.html">Night Driving</a>
                     <a class="btn btn-link" href="courses.html">Traffic Driving</a>
                     <a class="btn btn-link" href="courses.html">Defensive Driving</a>
@@ -195,19 +225,19 @@
                     <a class="btn btn-link" href="courses.html">Teen Driving</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <form action="">
+                    <!-- <h4 style="color:#F78D0A;" class="mb-4">Newsletter</h4> -->
+                    <!-- <form action="">
                         <div class="input-group">
                             <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
-                            <button class="btn btn-primary">Sign Up</button>
+                            <button class="btn btn-success">Sign Up</button>
                         </div>
-                    </form>
-                    <h6 class="text-white mt-4 mb-3">Follow Us</h6>
+                    </form> -->
+                    <h6 style="color:#F78D0A;" class="mt-4 mb-3">Follow Us</h6>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-outline-warning me-1" href=""><i class="fab fa-instagram"></i></a>
+                        <!-- <a class="btn btn-square btn-outline-success me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-success me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-success me-0" href=""><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -217,12 +247,14 @@
 
 
     <!-- Copyright Start -->
-    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+    <div style="background-color:  #545454;" class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">Just4Her Driving School</a>, All Right Reserved.
+                    &copy; <a href="#" style="color: white;">Just<span style="color: #F78D0A;">4</span style="color:white;">Her Driving School</a>, 
+                    <span style="color: white;">All Rights Reserved.</span>
                 </div>
+                
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                     Develop By <a href="https://wa.me/2348127662112">Ibrahim</a>
@@ -234,8 +266,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a href="#" class="btn btn-lg btn-warning btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
